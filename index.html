@@ -12,10 +12,10 @@
 </head>
 
 <body>
-    <nav class="flex items-center md:justify-evenly md:items-center w-full h-14 text-white bg-black">
+    <nav class="flex items-center md:justify-between md:space-x-4 md:items-center w-full h-14 text-white bg-black">
         <img class="ml-4 color-white h-[30px]" src="./icons/icon-puma.png">
-        <div class="hidden md:flex">
-            <ul>
+        <div class="hidden md:items-center md:flex">
+            <ul class="mr-4">
                 <li class="p-1 cursor-pointer hover:opacity-70 hover:border-b-[3px] hover:border-gold inline">New
                     Arrivals</li>
                 <li class="p-1 cursor-pointer hover:opacity-70 hover:border-b-[3px] hover:border-gold inline">Women</li>
@@ -34,7 +34,7 @@
             <button id="menu-btn" class="hamburger focus:outline-none mx-4 md:hidden">
                 <i class="cursor-pointer material-symbols-outlined">menu</i>
             </button>
-            <div class="self-center space-x-3">
+            <div class="self-center mr-2 space-x-3">
                 <i class="md:hidden cursor-pointer material-symbols-outlined">search</i>
                 <i class="cursor-pointer material-symbols-outlined">favorite</i>
                 <i class="cursor-pointer material-symbols-outlined">shopping_cart</i>
@@ -44,13 +44,14 @@
         <div class="md:hidden">
             <div id="menu"
                 class="absolute flex-col items-center hidden self-end px-3 py-8 mt-7 space-y-7 font-bold bg-black sm:w-auto sm:self-center right-0">
-                <li class="p-1 cursor-pointer hover:opacity-70 inline">New Arrivals</li>
-                <li class="p-1 cursor-pointer hover:opacity-70 inline">Women</li>
-                <li class="p-1 cursor-pointer hover:opacity-70 inline">Men</li>
-                <li class="p-1 cursor-pointer hover:opacity-70 inline">Kids</li>
-                <li class="p-1 cursor-pointer hover:opacity-70 inline">Collaborations</li>
-                <li class="p-1 cursor-pointer hover:opacity-70 inline">Sport</li>
-                <li class="p-1 cursor-pointer hover:opacity-70 inline">Outlet</li>
+                <ul>
+                    <li class="p-1 cursor-pointer hover:opacity-70 inline">New Arrivals</li>
+                    <li class="p-1 cursor-pointer hover:opacity-70 inline">Women</li>
+                    <li class="p-1 cursor-pointer hover:opacity-70 inline">Men</li>
+                    <li class="p-1 cursor-pointer hover:opacity-70 inline">Kids</li>
+                    <li class="p-1 cursor-pointer hover:opacity-70 inline">Collaborations</li>
+                    <li class="p-1 cursor-pointer hover:opacity-70 inline">Sport</li>
+                    <li class="p-1 cursor-pointer hover:opacity-70 inline">Outlet</li>
                 </ul>
                 <input type="search" placeholder="SEARCH PUMA.COM"
                     class="bg-black px-3 py-2 placeholder:font-thin placeholder:text-sm  border-solid border-[1px] border-grey focus:outline-none focus:border-1 focus:border-dark-grey">
@@ -114,8 +115,8 @@
             </li>
         </ul>
     </section>
-    <section>
-        <video controls>
+    <section class="my-10">
+        <video autoplay>
             <source
                 src="https://videos.puma.net/videos/fn/~regional~IND~others~Nitro+Video~22SS_Ecom_RT_RUN-PUMA_Velocity-Nitro-2_Q1_1_1440x500_15s.mp4"
                 type="video/mp4">
